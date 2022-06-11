@@ -7,14 +7,13 @@
 <p>José Augusto Cardoso Costa</p>
 
 ## Papéis
-<p>Basicamente haverão dois tipos de usuários, um deles é o administrador que terá o cadastro previamente adicionado por um desenvolvedor, este poderá adicionar novas músicas à biblioteca, além de modificar as atuais, ou excluí-las. O segundo tipo será o usuário padrão, este precisará realizar um cadastro ao iniciar o aplicativo, ele poderá visualizar as músicas existentes, além de poder criar playlists usando as músicas da biblioteca.</p>
+<p>Basicamente haverão dois tipos de usuários, um deles é o administrador que terá o cadastro previamente adicionado por um desenvolvedor, este poderá adicionar novas músicas e artistas, além de modificar os já existentes, ou excluí-los. O segundo tipo será o usuário padrão, este precisará realizar um cadastro ao iniciar o aplicativo, ele poderá visualizar as músicas existentes, além de poder criar playlists usando as músicas da biblioteca.</p>
 
 ## Requisitos funcionais
 ### Administrador
 <ul>
-  <li>Adicionar músicas</li>
-  <li>Remover músicas</li>
-  <li>Modificar músicas</li>
+  <li>CRUD músicas</li>
+  <li>CRUD artistas</li>
   <li>Alterar foto</li>
 </ul>
 
@@ -25,4 +24,5 @@
   <li>Alterar foto</li>
   <li>Alterar senha</li>
   <li>Remover playlists</li>
+  <li>Buscar música/artista</li>
 </ul>
