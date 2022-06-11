@@ -13,8 +13,37 @@
 ### Administrador
 <ul>
   <li>CRUD músicas</li>
+    <p><b>Create</b>: <br>
+    - Entrada: nome da música, Artista, arquivo de áudio, letra, nome do álbum, tipos musicais, duração e imagem; <br>
+    - Processamento: Verifica se foi informado nome da música, artista e o arquivo de áudio pois são necessários para incluir a música; <br>
+    - Retorno: sucesso ou falha.<br>
+    </p>
+    <p><b>Read</b>: <br>
+    - Entrada: Uma string qualquer; <br>
+    - Processamento: Busca dentre nome de músicas; <br>
+    - Retorno: Qualquer música correspondente ou nulo (caso não encontrado)
+    </p>
+    <p><b>Update</b>: <br>
+    - Entrada: nome da música, Artista, arquivo de áudio, letra, nome do álbum e duração; <br>
+    - Processamento: Altera a música desejada com os valores informados; <br>
+    - Retorno: sucesso ou falha;
+    </p>
   <li>CRUD artistas</li>
-  <li>Alterar foto</li>
+    <p><b>Create</b>: <br>
+    - Entrada: nome do artista, naturalidade, tipos musicais e imagem; <br>
+    - Processamento: Verifica se foi informado nome do artista pois este é necessário <br>
+    - Retorno: sucesso ou falha.<br>
+    </p>
+    <p><b>Read</b>: <br>
+    - Entrada: Uma string qualquer; <br>
+    - Processamento: Busca dentre nome de artistas; <br>
+    - Retorno: Qualquer artista correspondente ou nulo (caso não encontrado)
+    </p>
+    <p><b>Update</b>: <br>
+    - Entrada: nome do artista, naturalidade, tipos musicais e imagem; <br>
+    - Processamento: Altera o artista desejado com os valores informados; <br>
+    - Retorno: sucesso ou falha;
+    </p>
 </ul>
 
 ### Usuário
