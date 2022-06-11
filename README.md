@@ -60,10 +60,27 @@
 
 ### Usuário
 <ul>
-  <li>Criar playlists</li>
-  <li>Alterar nome de usuário</li>
-  <li>Alterar foto</li>
-  <li>Alterar senha</li>
-  <li>Remover playlists</li>
-  <li>Buscar música/artista</li>
+  <li>CRUD usuarios</li>
+    <p><b>Create</b>: <br>
+    - Entrada: nome de usuario, email e senha; <br>
+    - Processamento: Salva um novo usuário <br>
+    - Retorno: sucesso ou falha.<br>
+    </p>
+    <p><b>Read</b>: <br>
+    - Entrada: Uma string qualquer; <br>
+    - Processamento: Busca dentre os usuários existentes; <br>
+    - Retorno: Qualquer usuário correspondente ou nulo (caso não encontrado)
+    </p>
+    <p><b>Update</b>: <br>
+    - Entrada: senha e email; <br>
+    - Processamento: Altera determinadas informações do usuário; <br>
+    - Retorno: sucesso ou falha;
+    </p>
+    <p><b>Delete</b>: <br>
+    - Entrada: id do usuário; <br>
+    - Processamento: deleta o usuário; <br>
+    - Retorno: sucesso ou falha;
+    </p>
 </ul>
+</ul>
+
