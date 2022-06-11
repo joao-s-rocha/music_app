@@ -11,10 +11,12 @@ Basicamente haverão dois tipos de usuários, um deles é o administrador que te
 
 ## Requisitos funcionais
 ### Administrador
-Adicionar músicas\
-Remover músicas\
-Modificar músicas\
-Alterar foto
+<ul>
+  <li>Adicionar músicas</li>
+  <li>Remover músicas</li>
+  <li>Modificar músicas</li>
+  <li>Alterar foto</li>
+</ul>
 
 ### Usuário
 Criar playlists\
