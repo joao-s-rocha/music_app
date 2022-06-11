@@ -1,13 +1,13 @@
 # Player de música para android
 
-O aplicativo consiste em um player de músicas para android que reproduzirá músicas previamente inseridas. Ele exigirá que o usuário padrão faça um cadastro dando-lhe acesso a biblioteca de músicas existente.
+<p>O aplicativo consiste em um player de músicas para android que reproduzirá músicas previamente inseridas. Ele exigirá que o usuário padrão faça um cadastro dando-lhe acesso a biblioteca de músicas existente.</p>
 
 ## Alunos
-João dos Santos Rocha\
-José Augusto Cardoso Costa
+<p>João dos Santos Rocha</p>
+<p>José Augusto Cardoso Costa</p>
 
 ## Papéis
-Basicamente haverão dois tipos de usuários, um deles é o administrador que terá o cadastro previamente adicionado por um desenvolvedor, este poderá adicionar novas músicas à biblioteca, além de modificar as atuais, ou excluí-las. O segundo tipo será o usuário padrão, este precisará realizar um cadastro ao iniciar o aplicativo, ele poderá visualizar as músicas existentes, além de poder criar playlists usando as músicas da biblioteca.
+<p>Basicamente haverão dois tipos de usuários, um deles é o administrador que terá o cadastro previamente adicionado por um desenvolvedor, este poderá adicionar novas músicas à biblioteca, além de modificar as atuais, ou excluí-las. O segundo tipo será o usuário padrão, este precisará realizar um cadastro ao iniciar o aplicativo, ele poderá visualizar as músicas existentes, além de poder criar playlists usando as músicas da biblioteca.</p>
 
 ## Requisitos funcionais
 ### Administrador
@@ -19,8 +19,10 @@ Basicamente haverão dois tipos de usuários, um deles é o administrador que te
 </ul>
 
 ### Usuário
-Criar playlists\
-Alterar nome de usuário\
-Alterar foto\
-Alterar senha\
-Remover playlists
+<ul>
+  <li>Criar playlists</li>
+  <li>Alterar nome de usuário</li>
+  <li>Alterar foto</li>
+  <li>Alterar senha</li>
+  <li>Remover playlists</li>
+</ul>
