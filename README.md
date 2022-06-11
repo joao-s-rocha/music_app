@@ -1,2 +1,5 @@
 # music_app
-Aplicativo de músicas desenvolvido em Java - Android Studio
+> Aplicativo de músicas desenvolvido em Java - Android Studio
+## Especifiações
+### Alunos
+>
