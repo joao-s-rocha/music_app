@@ -10,6 +10,8 @@
 <p>Basicamente haverão dois tipos de usuários, um deles é o administrador que terá o cadastro previamente adicionado por um desenvolvedor, este poderá adicionar novas músicas e artistas, além de modificar os já existentes, ou excluí-los. O segundo tipo será o usuário padrão, este precisará realizar um cadastro ao iniciar o aplicativo, ele poderá visualizar as músicas existentes, além de poder criar playlists usando as músicas da biblioteca.</p>
 
 ## Requisitos funcionais
+
+## Requisitos funcionais
 ### Administrador
 <ul>
   <li>CRUD músicas</li>
@@ -28,6 +30,11 @@
     - Processamento: Altera a música desejada com os valores informados; <br>
     - Retorno: sucesso ou falha;
     </p>
+    <p><b>Delete</b>: <br>
+    - Entrada: id da música; <br>
+    - Processamento: deleta música; <br>
+    - Retorno: sucesso ou falha;
+    </p>
   <li>CRUD artistas</li>
     <p><b>Create</b>: <br>
     - Entrada: nome do artista, naturalidade, tipos musicais e imagem; <br>
@@ -42,6 +49,11 @@
     <p><b>Update</b>: <br>
     - Entrada: nome do artista, naturalidade, tipos musicais e imagem; <br>
     - Processamento: Altera o artista desejado com os valores informados; <br>
+    - Retorno: sucesso ou falha;
+    </p>
+    <p><b>Delete</b>: <br>
+    - Entrada: id do artista; <br>
+    - Processamento: deleta artista; <br>
     - Retorno: sucesso ou falha;
     </p>
 </ul>
