@@ -66,6 +66,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
+        android:id="@+id/btnInscrever"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Inscreva-se grátis"

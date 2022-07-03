@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     TextView textEntrar;
     EditText email, password;
+    FirebaseUser currentUser;
+    Button btnInscrever;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,21 +56,41 @@ public class MainActivity extends AppCompatActivity {
         textEntrar = (TextView) findViewById(R.id.btnEntrar);
         email = (EditText) findViewById(R.id.edtEmail);
         password = (EditText) findViewById(R.id.edtSenha);
+        btnInscrever = (Button) findViewById(R.id.btnInscrever);
 
         mAuth = FirebaseAuth.getInstance();
 
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if(currentUser != null){
-            getUserFirebase();
-        }
-
-
+        currentUser = mAuth.getCurrentUser();
 
         textEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listView = findViewById(R.id.listViewMusica);
-                runtimePermission();
+                getUserFirebase();
+                if (currentUser != null) {
+                    listView = findViewById(R.id.listViewMusica);
+                    runtimePermission();
+                } else {
+                    listView.setAdapter(null);
+                }
+            }
+        });
+
+        btnInscrever.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                createUserFirebase();
+                if (currentUser != null) {
+                    getUserFirebase();
+                    if (currentUser != null) {
+                        listView = findViewById(R.id.listViewMusica);
+                        runtimePermission();
+                    } else {
+                        listView.setAdapter(null);
+                    }
+                }
+                else {
+                    listView.setAdapter(null);
+                }
             }
         });
     }
@@ -81,16 +104,45 @@ public class MainActivity extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             //Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Toast.makeText(MainActivity.this, "Logado com sucesso!",
+                                    Toast.LENGTH_SHORT).show();
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
                             //Log.w(TAG, "signInWithEmail:failure", task.getException());
-                            Toast.makeText(MainActivity.this, "Authentication failed.",
+                            Toast.makeText(MainActivity.this, "Falha na autenticação do login.",
                                     Toast.LENGTH_SHORT).show();
                             updateUI(null);
                         }
                     }
                 });
+    }
+
+    public void createUserFirebase(){
+        mAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString())
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            //Log.d(TAG, "createUserWithEmail:success");
+                            Toast.makeText(MainActivity.this, "Criação de login com sucesso!",
+                                    Toast.LENGTH_SHORT).show();
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            updateUI(user);
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            //Log.w(TAG, "createUserWithEmail:failure", task.getException());
+                            Toast.makeText(MainActivity.this, "Criação de login falhou.",
+                                    Toast.LENGTH_SHORT).show();
+                            updateUI(null);
+                        }
+                    }
+                });
+    }
+
+    public void updateUI(FirebaseUser user){
+        currentUser = user;
     }
 
     public void runtimePermission() {
