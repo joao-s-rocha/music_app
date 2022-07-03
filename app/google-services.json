@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "248251491077",
+    "project_id": "trabalho-3---music-app",
+    "storage_bucket": "trabalho-3---music-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248251491077:android:e86799e909b9821d364d6c",
+        "android_client_info": {
+          "package_name": "com.example.trabalho3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248251491077-lfbgtbd8ofkhseh6quidh2ptq585uhob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDsXBzuJO79Tg_csPgBa1J7xYKhc_ZUpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248251491077-lfbgtbd8ofkhseh6quidh2ptq585uhob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
