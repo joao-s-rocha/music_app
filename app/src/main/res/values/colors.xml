@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="corPrimaria">#FF3366</color>
+    <color name="corPrimariaEscura">#FF3366</color>
+    <color name="corDestaque">#FF3366</color>
+</resources>
